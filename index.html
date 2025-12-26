@@ -35,14 +35,40 @@
           <i class="fa-brands fa-linkedin"></i>
         </div>
       </nav>
+         <nav class="navbar  navbar-dark bg-secondary fixed-top">
+  <div class="container-fluid">
+   <div><h1>Zay</h1></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">zay</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+          </li>
+      </div>
+    </div>
+  </div>
+</nav>
       <nav class="nav2">
-        <h1>Zay</h1>
+        <div><h1>Zay</h1></div>
 
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        <div class="navlink">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="Contact.html">Contact</a>
+        </div>
         <div class="icon">
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-cart-plus"></i>
@@ -51,8 +77,8 @@
       </nav>
     </header>
     <main>
-        <div class="hero">
-      <div class="main-hero container">
+      <section class="hero">
+        <div class="main-hero">
           <div class="text">
             <h1>Repr in voluptate</h1>
             <h3 class="">Ullamco laboris nisi ut</h3>
@@ -62,12 +88,222 @@
               PayPal or tell your friends about our website. Thank you.
             </p>
           </div>
-          <div class="img">
-            <img src="banner_img_03.jpg" height="50%" alt="hero img" />
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="banner_img_03.jpg" height="30vh" class="d-block w-100" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="banner_img_02.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="banner_img_01.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="bg-success carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="bg-success carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="circle-card">
+        <div class="productCardText">
+          <h1>Categories of The Month</h1>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="product-card">
+          <div class="card1">
+            <img class="rounded-circle" src="category_img_01.jpg" alt="img1" />
+            <h5>Watches</h5>
+            <button type="button" class="btn">Success</button>
+          </div>
+          <div class="card1">
+            <img class="rounded-circle" src="category_img_02.jpg" alt="img1" />
+            <h5>Watches</h5>
+            <button type="button" class="btn">Success</button>
+          </div>
+          <div class="card1">
+            <img class="rounded-circle" src="category_img_03.jpg" alt="img1" />
+            <h5>Watches</h5>
+            <button type="button" class="btn">Success</button>
+          </div>
+        </div>
+      </section>
+      <section class="circle-card mainCard">
+        <div class="productCardText">
+          <h1>Featured Product</h1>
+          <p>
+            Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+        <div class="productcard">
+          <div class="card" style="width: 22rem">
+            <img src="feature_prod_01.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="star">
+                <p>
+                  <i class="text-warning fa fa-star"></i
+                  ><i class="text-warning fa fa-star"></i
+                  ><i class="text-warning fa fa-star"></i
+                  ><i class="text-muted fa fa-star"></i
+                  ><i class="text-muted fa fa-star"></i>
+                </p>
+                <p>$240.00</p>
+              </div>
+              <h5 class="card-title">Gym Weight</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <p class="Reviews">Reviews (24)</p>
+            </div>
+          </div>
+          <div class="card" style="width: 22rem">
+            <img src="feature_prod_02.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="star">
+                <p>
+                  <i class="text-warning fa fa-star"></i
+                  ><i class="text-warning fa fa-star"></i
+                  ><i class="text-warning fa fa-star"></i
+                  ><i class="text-muted fa fa-star"></i
+                  ><i class="text-muted fa fa-star"></i>
+                </p>
+                <p>$240.00</p>
+              </div>
+              <h5 class="card-title">Gym Weight</h5>
+              <p class="card-text">
+                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
+                vitae pharetra sed, commodo ullamcorper.
+              </p>
+              <p class="Reviews">Reviews (48)</p>
+            </div>
+          </div>
+          <div class="card" style="width: 22rem">
+            <img src="feature_prod_03.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="star">
+                <p>
+                  <i class="text-warning fa fa-star"></i
+                  ><i class="text-warning fa fa-star"></i
+                  ><i class="text-warning fa fa-star"></i
+                  ><i class="text-muted fa fa-star"></i
+                  ><i class="text-muted fa fa-star"></i>
+                </p>
+                <p>$240.00</p>
+              </div>
+              <h5 class="card-title">Summer Addides Shoes</h5>
+              <p class="card-text">
+                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+              </p>
+              <p class="Reviews">Reviews (74)</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-link">
+        <div class="link">
+          <h1>Zay Shop
+</h1>
+<div>
+  <a href="#">
+    <i class="fas fa-map-marker-alt fa-fw"></i>
+     123 Consectetur at ligula 10660
+</a>
+  <a href="#" > <i class="fa fa-phone fa-fw"></i>010-020-0340</a>
+  <a href="#"> <i class="fa fa-envelope fa-fw"></i>info@company.com</a>
+</div>
+        </div>
+          <div class="link">
+          <h1>Products
+</h1>
+<div class="padding">
+  <a href="#">Luxury</a>
+  <a href="#">Sport Wear</a>
+  <a href="#">Men's Shoes</a>
+  <a href="#">Women's Shoes</a>
+  <a href="#">Popular Dress</a>
+  <a href="#">Gym Accessories</a>
+  <a href="#">Sport Shoes</a>
+</div>
+        </div>
+          <div class="link">
+          <h1>Further Info</h1>
+<div class="padding">
+  <a href="index.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="#" >Shop Locations</a>
+  <a href="#">FAQ</a>
+  <a href="#">Contat</a>
+</div>
+        </div>
+      </div>
+      <div class="icon container">
+        <div class="appIcon">
+          <a class="" target="_blank" href="https://www.facebook.com/profile.php?id=61585489417384"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+          <a class="" target="_blank" href="https://www.instagram.com/ikrash680/?hl=en"><i class="fab fa-instagram -f fa-lg fa-fw"></i></a>
+          <a class="" target="_blank" href="https://whatsapp.com/channel/0029Vb6S6AFInlqXdQrg8Q3J"><i class="fab fa-whatsapp -f fa-lg fa-fw"></i></a>
+          <a class="" target="_blank" href="https://www.linkedin.com/in/mohammad-ikrash-9767b8394/"><i class="fab fa-linkedin -f fa-lg fa-fw"></i></a>
+      
+        </div>
+        <div class="email">
+          <input type="text" placeholder="Email Address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright ">
+        <p class="container">Copyright © 2021 Company Name | Designed by <a href="https://www.linkedin.com/in/mohammad-ikrash-9767b8394/">Muhammad Ikrash</a></p>
+      </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
